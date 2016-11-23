@@ -4,12 +4,12 @@
 <form wicket:id="form">
   <ul>
     <li>
-      <label for="name">Name</label>
-      <input wicket:id="name" id="name" type="text" size="20"/><p style="color:red;float:left;"> * </p>
+      <label for="name">Name * </label>
+      <input wicket:id="name" id="name" type="text" size="20" maxlength="250" />
     </li>
     <li>
-      <label for="uri"><wicket:message key="namespaceURI">Namespace URI</wicket:message></label>
-      <input wicket:id="uri" id="uri" type="text" size="60"/><p style="color:red;float:left;"> * </p>
+      <label for="uri"><wicket:message key="namespaceURI">Namespace URI</wicket:message> * </label>
+      <input wicket:id="uri" id="uri" type="text" size="60"/>
       <div class="instruct"><wicket:message key="namespaceUriAssocWithWorkspace">The namespace uri associated with this workspace</wicket:message></div>
     </li>
     <li>
