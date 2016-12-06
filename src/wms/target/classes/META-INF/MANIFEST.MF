@@ -2,8 +2,8 @@ Manifest-Version: 1.0
 Application-Name: 
 Implementation-Title: Web Map Service Module
 Implementation-Version: 2.7-SNAPSHOT
-Build-Timestamp: 02-12￬ﾛﾔ-2016 02:14
-Built-By: sgshs
+Build-Timestamp: 06-Dec-2016 02:16
+Built-By: jsKim-pc
 Specification-Vendor: The Open Planning Project
 Specification-Title: Web Map Service Module
 Implementation-Vendor-Id: org.geoserver
@@ -12,7 +12,7 @@ Project-Version: 2.7-SNAPSHOT
 Implementation-Vendor: The Open Planning Project
 Iteration-Name: 
 Git-Revision: 
-Build-Jdk: 1.8.0_111
+Build-Jdk: 1.8.0_101
 Specification-Version: 2.7-SNAPSHOT
 Created-By: Maven Integration for Eclipse
 
