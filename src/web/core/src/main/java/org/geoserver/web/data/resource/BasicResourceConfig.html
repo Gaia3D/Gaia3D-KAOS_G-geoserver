@@ -75,12 +75,12 @@
           <legend><span><wicket:message key="boundingBoxes">Bounding Boxes</wicket:message></span></legend>
           <ul>
             <li>
-              <label for="nativeBoundingBox"><wicket:message key="nativeBbox">Native BBox</wicket:message></label>
+              <label for="nativeBoundingBox"><wicket:message key="nativeBbox">Native BBox</wicket:message><span> * </span></label>
               <div id="nativeBoundingBox" wicket:id="nativeBoundingBox"></div>
               <a href="#" wicket:id="computeNative" class="computeLink"><wicket:message key="computeFromData">Compute from data</wicket:message></a>
             </li>
             <li>
-              <label for="latLonBoundingBox"><wicket:message key="latLonBbox">Lat/Lon BBOX</wicket:message></label>
+              <label for="latLonBoundingBox"><wicket:message key="latLonBbox">Lat/Lon BBOX</wicket:message><span> * </span></label>
               <div id="latLonBoundingBox" wicket:id="latLonBoundingBox"></div>
               <a href="#" wicket:id="computeLatLon" class="computeLink"><wicket:message key="computeFromNativeBounds">Compute from native bounds</wicket:message></a>
             </li>
