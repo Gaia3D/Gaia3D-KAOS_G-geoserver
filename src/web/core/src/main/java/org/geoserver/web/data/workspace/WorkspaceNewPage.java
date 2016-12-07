@@ -50,14 +50,30 @@ public class WorkspaceNewPage extends GeoServerSecuredPage {
                 ns.setPrefix ( ws.getName() );
                 ns.setURI(nsUriTextField.getDefaultModelObjectAsString());
                 
-                catalog.add( ws );
-                catalog.add( ns );
+                try{
+                	catalog.add( ws );
+                	catalog.add( ns );
+                } catch (Exception e){
+                	e.printStackTrace();
+                }
+                
                 if(defaultWs)
                     catalog.setDefaultWorkspace(ws);
                 
                 //TODO: set the response page to be the edit 
                 doReturn(WorkspacePage.class);
             }
+            
+            @Override
+            protected void onError(){
+            	System.out.println("error!!!");
+            }
+            
+            @Override
+            protected void onValidate(){
+            	System.out.println("validate!!!");
+            }
+
         };
         add(form);
         

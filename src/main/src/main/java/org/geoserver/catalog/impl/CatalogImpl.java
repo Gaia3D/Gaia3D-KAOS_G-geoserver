@@ -1061,7 +1061,11 @@ public class CatalogImpl implements Catalog {
     }
 
     public void add(NamespaceInfo namespace) {
-        validate(namespace,true);
+        try{
+        	validate(namespace,true);
+        } catch (Exception e){
+        	e.printStackTrace();
+        }
         
         NamespaceInfo added;
         synchronized (facade) {
@@ -1164,10 +1168,16 @@ public class CatalogImpl implements Catalog {
     // Workspace methods
     public void add(WorkspaceInfo workspace) {
         workspace = resolve(workspace);
-        validate(workspace,true);
+
+        try{
+        	validate(workspace,true);
+        } catch (Exception e){
+        	e.printStackTrace();
+        }
         
         if ( getWorkspaceByName(workspace.getName()) != null ) {
-            throw new IllegalArgumentException( "Workspace with name '" + workspace.getName() + "' already exists.");
+           // 
+           // throw new IllegalArgumentException( "Workspace with name '" + workspace.getName() + "' already exists.");
         }
         
         WorkspaceInfo added;
