@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Application-Name: 
 Implementation-Title: Security UI JDBC Module
 Implementation-Version: 2.7-SNAPSHOT
-Build-Timestamp: 06-Dec-2016 02:16
+Build-Timestamp: 07-Dec-2016 02:47
 Built-By: jsKim-pc
 Specification-Vendor: The Open Planning Project
 Specification-Title: Security UI JDBC Module

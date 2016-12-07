@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Application-Name: 
 Implementation-Title: GeoServer Web Application
 Implementation-Version: 2.7-SNAPSHOT
-Build-Timestamp: 06-Dec-2016 02:16
+Build-Timestamp: 07-Dec-2016 00:32
 Built-By: jsKim-pc
 Specification-Vendor: The Open Planning Project
 Specification-Title: GeoServer Web Application
