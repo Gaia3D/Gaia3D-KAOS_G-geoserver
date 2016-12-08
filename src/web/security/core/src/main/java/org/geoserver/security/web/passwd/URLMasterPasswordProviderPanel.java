@@ -33,11 +33,19 @@ public class URLMasterPasswordProviderPanel
                     }
                     @Override
                     public Object convertToObject(String value, Locale locale) {
+                    	URL url = null;
                         try {
-                            return new URL(value);
+                        	url = new URL("http:");
+                        	if(!"".equals(value)){
+                        		url = new URL(value);
+                        	}
                         } catch (MalformedURLException e) {
-                            throw new RuntimeException(e);
+                            //throw new RuntimeException(e);
+                        } catch (Exception e) {
+                            //throw new RuntimeException(e);
+                        	e.printStackTrace();
                         }
+                        return url;
                     }
                 };
             }
