@@ -12,16 +12,16 @@
           </legend>
           <ul>
            <li>
-             <label for="passwordEncoderName"><wicket:message key="passwordEncryption"></wicket:message></label>
-             <p style="color:red;float:left;"> * </p><select wicket:id="passwordEncoderName"/>
+             <label for="passwordEncoderName"><wicket:message key="passwordEncryption"></wicket:message><span> * </span></label>
+             <select wicket:id="passwordEncoderName"/>
            </li>
            <li>
             <input wicket:id="recodeExistingPasswords" type="checkbox" class="field checkbox" ></input>
             <label for="recodeExistingPasswords" class="choice"><wicket:message key="recodeExistingPasswords"></wicket:message></label>
            </li>           
            <li>
-             <label for="passwordPolicyName"><wicket:message key="passwordPolicy"></wicket:message></label>
-             <p style="color:red;float:left;"> * </p><select wicket:id="passwordPolicyName"/>
+             <label for="passwordPolicyName"><wicket:message key="passwordPolicy"></wicket:message><span> * </span></label>
+             <select wicket:id="passwordPolicyName"/>
            </li>
           </ul>
         </fieldset>
